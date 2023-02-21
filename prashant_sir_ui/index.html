@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="center-div" id="transform-div">
+            <div class="branding" id="transform-branding"><img src="5285485.webp" alt=""><br><h3>Logo</h3></div>
+            <div class="ulr-search" id="ulr-search">
+                <div class="ulr-enter-box">
+                    <input type="text" placeholder="Paste url here" class="form-control">
+                </div>
+                <div class="search-btn-box">
+                    <button class="btn btn-primary" onclick="TRANSFORM()">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="result-box result-box-transform" id="result-box">
+        <div class="result">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="pexels-pixabay-434645.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="pexels-pixabay-434645.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="pexels-pixabay-434645.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function TRANSFORM(){
+            document.getElementById("transform-div").style.transition = "all ease-in-out 0.25s"
+            document.getElementById("transform-div").classList.add("top-div");
+            document.getElementById("transform-branding").classList.add("branding-top")
+            document.getElementById("transform-div").style.transition = "all ease-out 0.25s";
+            document.getElementById("transform-div").style.width = "100%";
+            document.getElementById("ulr-search").classList.add("ulr-search-top");
+            setTimeout(function(){
+                document.getElementById("result-box").style.transition = "all ease-in-out 0.5s";    
+                document.getElementById("result-box").style.bottom = "0";
+            }, 50)
+        }
+    </script>
+</body>
+</html>
