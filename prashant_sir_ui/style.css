@@ -27,6 +27,7 @@ body{
     backdrop-filter: blur(2px);
     border-radius: 20px;
     box-shadow: inset 0px 0px 60px #5a72ec6d;
+
     transition: all ease-in-out 0.5s;
     z-index: 9999;
 }
@@ -63,6 +64,20 @@ body{
 .top-div{
     transition: all ease-in-out 0.5s;
     padding: 0px 0px;
+    width: 50%;
+    transition: all ease-in-out 0.1s;
+    padding: 0 100px;
+    width: 75%;
+    transition: all ease-in-out 0.15s;
+    padding: 0 95px;
+    width: 85%;
+    transition: all ease-in-out 0.20s;
+    padding: 0 80px;
+    width: 100%;
+    transition: all ease-in-out 0.25s;
+    padding: 0 70px;
+    transition: all ease-in-out 0.30s;
+    padding: 0 60px;
     top: 4.5%;
     border-radius: 1px;
     display: flex;
@@ -74,7 +89,6 @@ body{
     border-bottom-color: rgba(255, 255, 255, 0.683);
     backdrop-filter: blur(2px);
     box-shadow: inset 0px 0px 60px #5a72ec6d;
-
 }
 
 .branding-top{
